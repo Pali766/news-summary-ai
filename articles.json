@@ -2,19 +2,25 @@
   {
     "title": "OpenAI új modellt jelentett be",
     "category": "ai",
-    "summary": "Az OpenAI új modellje gyorsabb és pontosabb válaszokat ígér.",
+    "summary": "Az OpenAI bemutatta új modelljét.",
     "url": "#"
   },
   {
     "title": "Google AI fejlesztések",
     "category": "technology",
-    "summary": "A Google új AI eszközöket mutatott be.",
+    "summary": "Új AI eszközöket mutatott be a Google.",
     "url": "#"
   },
   {
     "title": "AI az oktatásban",
     "category": "education",
-    "summary": "Az iskolák egyre több AI megoldást használnak.",
+    "summary": "Az iskolák egyre több AI eszközt használnak.",
+    "url": "#"
+  },
+  {
+    "title": "Startup befektetési rekord",
+    "category": "business",
+    "summary": "Egy AI startup jelentős befektetést kapott.",
     "url": "#"
   }
 ]
