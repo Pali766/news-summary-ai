@@ -2,20 +2,115 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI News Hub</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .search {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .categories {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .category {
+            background: #2563eb;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+        }
+
+        .article {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .article h3 {
+            margin-top: 0;
+        }
+
+        .summary {
+            color: #555;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>AI News Hub</h1>
 
-    <p>Az oldal fejlesztés alatt áll.</p>
+<header>
+    <h1>📰 AI News Hub</h1>
+    <p>AI által összefoglalt hírek egy helyen</p>
+</header>
 
-    <h2>Kategóriák</h2>
+<div class="container">
 
-    <ul>
-        <li>AI</li>
-        <li>Technológia</li>
-        <li>Oktatás</li>
-        <li>Üzlet</li>
-    </ul>
+    <input
+        class="search"
+        type="text"
+        placeholder="Keresés..."
+    >
+
+    <div class="categories">
+        <div class="category">AI</div>
+        <div class="category">Technológia</div>
+        <div class="category">Oktatás</div>
+        <div class="category">Üzlet</div>
+        <div class="category">Tudomány</div>
+    </div>
+
+    <div class="article">
+        <h3>OpenAI új modellt jelentett be</h3>
+
+        <p class="summary">
+            Itt jelenik majd meg az AI által készített
+            5 mondatos összefoglaló.
+        </p>
+
+        <a href="#">Eredeti cikk →</a>
+    </div>
+
+    <div class="article">
+        <h3>Google AI fejlesztések</h3>
+
+        <p class="summary">
+            Mintacikk a későbbi rendszerhez.
+        </p>
+
+        <a href="#">Eredeti cikk →</a>
+    </div>
+
+</div>
+
 </body>
 </html>
