@@ -118,7 +118,40 @@
 </body>
     <script>
 function filterArticles(category) {
+function searchArticles() {
 
+    const searchText =
+        document
+        .getElementById("searchInput")
+        .value
+        .toLowerCase();
+
+    const articles =
+        document.querySelectorAll(".article");
+
+    articles.forEach(article => {
+
+        const title =
+            article
+            .querySelector("h3")
+            .innerText
+            .toLowerCase();
+
+        if (
+            title.includes(searchText)
+        ) {
+
+            article.style.display = "block";
+
+        } else {
+
+            article.style.display = "none";
+
+        }
+
+    });
+
+}
     const articles = document.querySelectorAll('.article');
 
     articles.forEach(article => {
