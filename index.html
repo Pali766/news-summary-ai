@@ -90,7 +90,7 @@
         <div class="category">Tudomány</div>
     </div>
 
-    <div class="article">
+    <div class="article" data-category="ai">
         <h3>OpenAI új modellt jelentett be</h3>
 
         <p class="summary">
@@ -101,7 +101,7 @@
         <a href="#">Eredeti cikk →</a>
     </div>
 
-    <div class="article">
+    <div class="article" data-category="technology">
         <h3>Google AI fejlesztések</h3>
 
         <p class="summary">
@@ -114,4 +114,23 @@
 </div>
 
 </body>
+    <script>
+function filterArticles(category) {
+
+    const articles = document.querySelectorAll('.article');
+
+    articles.forEach(article => {
+
+        if (
+            category === 'all' ||
+            article.dataset.category === category
+        ) {
+            article.style.display = 'block';
+        } else {
+            article.style.display = 'none';
+        }
+
+    });
+}
+</script>
 </html>
