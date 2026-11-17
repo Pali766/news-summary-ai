@@ -2,11 +2,19 @@
   {
     "title": "OpenAI új modellt jelentett be",
     "category": "ai",
-    "summary": "Az OpenAI bemutatta új modelljét."
+    "summary": "Az OpenAI új modellje gyorsabb és pontosabb válaszokat ígér.",
+    "url": "#"
   },
   {
     "title": "Google AI fejlesztések",
     "category": "technology",
-    "summary": "Új AI eszközöket jelentett be a Google."
+    "summary": "A Google új AI eszközöket mutatott be.",
+    "url": "#"
+  },
+  {
+    "title": "AI az oktatásban",
+    "category": "education",
+    "summary": "Az iskolák egyre több AI megoldást használnak.",
+    "url": "#"
   }
 ]
