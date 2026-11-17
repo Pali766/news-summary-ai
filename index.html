@@ -117,7 +117,26 @@
 
 </body>
     <script>
+
 function filterArticles(category) {
+
+    const articles = document.querySelectorAll('.article');
+
+    articles.forEach(article => {
+
+        if (
+            category === 'all' ||
+            article.dataset.category === category
+        ) {
+            article.style.display = 'block';
+        } else {
+            article.style.display = 'none';
+        }
+
+    });
+
+}
+
 function searchArticles() {
 
     const searchText =
@@ -137,9 +156,7 @@ function searchArticles() {
             .innerText
             .toLowerCase();
 
-        if (
-            title.includes(searchText)
-        ) {
+        if (title.includes(searchText)) {
 
             article.style.display = "block";
 
@@ -152,20 +169,6 @@ function searchArticles() {
     });
 
 }
-    const articles = document.querySelectorAll('.article');
 
-    articles.forEach(article => {
-
-        if (
-            category === 'all' ||
-            article.dataset.category === category
-        ) {
-            article.style.display = 'block';
-        } else {
-            article.style.display = 'none';
-        }
-
-    });
-}
 </script>
 </html>
